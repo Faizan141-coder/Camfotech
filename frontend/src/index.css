@@ -36,6 +36,12 @@ h1 {
   justify-content: center;
 }
 
+.img-size {
+  width: 230px;
+  height: 30vh;
+  margin-left: 1px;
+}
+
 form button {
 
   margin-left: 0%;
@@ -427,8 +433,22 @@ header a {
 }
 
 .a {
-  padding: 10px;
-  margin: 0px;
+  margin-top: 10px;
+  margin-left: 8px;
+  
+}
+
+.ab:hover {
+  color: #ff4e4e;
+}
+
+.ab {
+  margin-top: -47px;
+  margin-left: 130px;
+}
+
+.a:hover {
+  color: #4eff74;
 }
 
 .home {

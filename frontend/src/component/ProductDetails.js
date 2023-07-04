@@ -106,8 +106,8 @@ const EditTheProduct = async (e) => {
         <div className="buyer-details">
             <p><strong>Product: </strong>{product.name}</p>
             <p><strong>price: </strong>{product.price}</p>
-            <p><strong>seller: </strong>{product.seller.name}</p>
-            <img src={product.image} alt="img"></img>
+            {/* <p><strong>seller: </strong>{product.seller.name}</p> */}
+            <img className='img-size' src={product.image} alt="img"></img>
         {/* <label className="label1">Change Status</label>
         <select className="dropdown1" onChange={handleOptionChange}>
             <option value="">Select Option</option>
@@ -130,7 +130,7 @@ const EditTheProduct = async (e) => {
      
       ) : null}
       {flag === 'true' ? (
-       <button className="a" onClick={()=>setSingleClick(true)}>Edit</button>
+       <button className="ab" onClick={()=>setSingleClick(true)}>Edit</button>
        ) : null}
 
        {SingleClick &&
