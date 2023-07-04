@@ -1,15 +1,14 @@
 import 'material-symbols';
-import formatDistanceToNow from 'date-fns/formatDistanceToNow'
 import 'material-symbols'
 import '../index.css'
 import { useSelector,useDispatch } from 'react-redux';
 import { incrementCount} from '../actions/action';
-import { useState,useEffect,useContext } from 'react'
+import { useState } from 'react'
 
 const DeliveryDetails = ({  delivery  }) => {
 
 const selector =useSelector((state)=>state.reducer)
-const [role, setRole] = useState('default');
+// const [role, setRole] = useState('default');
 const dispatch = useDispatch()
 const [status,orderStatus]=useState('')
 

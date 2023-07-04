@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import {Link} from 'react-router-dom'
-import { formatDistanceToNow } from 'date-fns'
 
 const SignUp = () => {
   
@@ -85,7 +84,7 @@ const SignUp = () => {
           <option value="seller">seller</option>
         </select>
       <button type="submit">Sign Up</button>
-      <a><Link to="/">Exists? <span><strong>Login</strong></span></Link></a>
+      <a href='/'><Link to="/">Exists? <span><strong>Login</strong></span></Link></a>
       <h3>{error}</h3>
     </form>
 

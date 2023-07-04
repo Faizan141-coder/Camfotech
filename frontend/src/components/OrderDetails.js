@@ -1,10 +1,9 @@
 import 'material-symbols';
-import formatDistanceToNow from 'date-fns/formatDistanceToNow'
 import 'material-symbols'
 import '../index.css'
 import { useSelector,useDispatch } from 'react-redux';
 import { incrementCount} from '../actions/action';
-import { useState,useEffect,useContext } from 'react'
+import { useState,useEffect } from 'react'
 
 const OrderDetails = ({  order  }) => {
 const selector =useSelector((state)=>state.reducer)

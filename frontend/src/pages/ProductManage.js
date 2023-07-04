@@ -1,8 +1,7 @@
-import { useEffect, useState} from 'react'
+import { useEffect } from 'react'
 import { useDispatch,useSelector } from 'react-redux'
-import { formatDistanceToNow } from 'date-fns'
-import ProductDetails from '../component/ProductDetails'
-import ProductForm from '../component/ProductForm'
+import ProductDetails from '../components/ProductDetails'
+import ProductForm from '../components/ProductForm'
 import {fetchSellerProducts} from '../actions/action'
 
 const ProductManage = () => {

@@ -1,7 +1,7 @@
-import { useEffect, useState,useMemo } from 'react'
+import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchProducts,searchProducts,AddToCart,fetchOrders,fetchOwnOrders } from '../actions/action';
-import OrderDetails from '../component/OrderDetails'
+import { fetchOwnOrders } from '../actions/action';
+import OrderDetails from '../components/OrderDetails'
 
 
 const MyOrders = () => {

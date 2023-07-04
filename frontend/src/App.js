@@ -3,7 +3,7 @@ import Login from './pages/Login'
 import ProductsPage from './pages/ProductsPage'
 import ProductManage from './pages/ProductManage'
 import SignUp from './pages/Signup'
-import NavBar from './component/Navbar'
+import NavBar from './components/Navbar'
 import ManageProfile from './pages/ManageProfile'
 import ManageUsers from './pages/ManageUsers';
 import ManageOrder from './pages/ManageOrder';

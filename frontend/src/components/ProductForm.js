@@ -1,4 +1,4 @@
-import { useState,useEffect,useContext } from "react"
+import { useState } from "react"
 import { incrementCount } from '../actions/action'; // Create this action later
 import { useDispatch} from "react-redux";
 

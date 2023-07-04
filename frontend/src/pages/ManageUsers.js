@@ -1,8 +1,7 @@
-import { useEffect, useState,useMemo } from 'react'
+import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
-
 import {fetchUsers} from '../actions/action'
-import UserCard from '../component/UserCard'
+import UserCard from '../components/UserCard'
 
 const ManageUsers = () => {
  

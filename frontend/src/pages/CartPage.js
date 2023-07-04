@@ -1,7 +1,6 @@
 import { useSelector } from "react-redux"
 import { useState } from "react"
-import CartItem from "../component/CartItem"
-import StripeCheckout from 'react-stripe-checkout';
+import CartItem from "../components/CartItem"
 import {useNavigate} from 'react-router-dom'
 
 function CartPage(){

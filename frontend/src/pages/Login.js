@@ -1,7 +1,8 @@
-import { useEffect,useState,useMemo} from "react"
+import { useState } from "react"
 import {Link} from 'react-router-dom'
 import { incrementCount } from '../actions/action'; // Create this action later
 import { useDispatch} from "react-redux";
+
 const Login = () => {
   const [username, setusername] = useState('');
   const [password, setPassword] = useState('');

@@ -1,13 +1,10 @@
 import 'material-symbols';
-import formatDistanceToNow from 'date-fns/formatDistanceToNow'
 import 'material-symbols'
 import '../index.css'
-import { useSelector,useDispatch } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { incrementCount} from '../actions/action';
-import { useState,useEffect,useContext } from 'react'
 const UserCard = ({  user  }) => {
 
-     
      const dispatch = useDispatch()
       
 const DeleteTheUser = async (e) => {

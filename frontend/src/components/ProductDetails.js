@@ -1,11 +1,10 @@
 import 'material-symbols';
-import formatDistanceToNow from 'date-fns/formatDistanceToNow'
 import 'material-symbols'
 import '../index.css'
 import { useSelector,useDispatch } from 'react-redux';
 import { incrementCount,addProductToCart} from '../actions/action';
-import { useState,useEffect,useContext } from 'react'
-const ProductDetails = ({  product , addProductsToCart }) => {
+import { useState,useEffect } from 'react'
+const ProductDetails = ({  product }) => {
 
      const selector =useSelector((state)=>state.reducer)
      const [role, setRole] = useState('default');
