@@ -66,7 +66,7 @@ const Login = () => {
     <h3> Password: </h3>
         <input type="password" value={password} onChange={handlePasswordChange} />
       <button type="submit">Login</button>
-       <a><Link to="/signUp">Create new Account? <span><strong>SignUp</strong></span></Link></a>
+       <Link to="/signUp">Create new Account? <span><strong>SignUp</strong></span></Link>
       <h3>{error}</h3>
     </form>
    </div>
