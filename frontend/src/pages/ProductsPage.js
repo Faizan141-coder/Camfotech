@@ -14,16 +14,16 @@ const ProductsPage = () => {
     localStorage.setItem('sellerPage',false)
   
     useEffect(() => {
-    dispatch(fetchProducts());
-    const interval = setInterval(() => {
-        console.log(products)
       dispatch(fetchProducts());
-       
-    }, 5000);
-    return () => {
-      clearInterval(interval);
-    };
-    }, []);
+      const interval = setInterval(() => {
+          console.log(products)
+        dispatch(fetchProducts());
+        
+      }, 5000);
+      return () => {
+        clearInterval(interval);
+      };
+    }, [dispatch, products]);
 
     
     const searchProduct=(e)=>{

@@ -14,7 +14,7 @@ const ProductManage = () => {
         dispatch(fetchSellerProducts())
         console.log("products seller",sellerProducts)
         
-    },[selector])
+    }, [selector])
 
     return (
         <div className="home">

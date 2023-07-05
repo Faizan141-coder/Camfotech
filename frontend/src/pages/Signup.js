@@ -19,8 +19,6 @@ const SignUp = () => {
   const handlePasswordChange = (event) => {
     setPassword(event.target.value);
   };
-
-   
   const handleNameChange = (event) => {
     setname(event.target.value);
   };
@@ -55,39 +53,41 @@ const SignUp = () => {
             setError('')
             alert("Account Created Successfully")
         }
-    // Handle form submission here
   };
 
   return (
     <div className='pad'>
-      
-   
-    <form  onSubmit={handleSubmit}>
-        <h1 className='nice'>Welcome To SignUp Page</h1>
-        <h3>Email:</h3>
-        <input type="email" value={username} onChange={handleUsernameChange} />
-        <h3>name:</h3>
-        <input type="text" value={name} onChange={handleNameChange} />
-        <h3>password:</h3>
-        <input type="password" value={password} onChange={handlePasswordChange} />
-        <h3>Image:</h3>
-        <input type="text" value={image} onChange={handleSetImage} />
-        <h3>role:</h3>
-         <select className="dropdown1"
-            value={role}
-            onChange={handleOptionChange}
-            >
-          <option value="-">Select Option</option>
-          <option value="admin">admin</option>
-          <option value="buyer">buyer</option>
-          <option value="rider">rider</option>
-          <option value="seller">seller</option>
-        </select>
-      <button type="submit">Sign Up</button>
-      <a href='/'><Link to="/">Exists? <span><strong>Login</strong></span></Link></a>
-      <h3>{error}</h3>
-    </form>
+      <form  onSubmit={handleSubmit}>
+          <h1 className='nice'>Welcome To SignUp Page</h1>
 
+          <h3>Email:</h3>
+          <input type="email" value={username} onChange={handleUsernameChange} />
+
+          <h3>Name:</h3>
+          <input type="text" value={name} onChange={handleNameChange} />
+
+          <h3>Password:</h3>
+          <input type="password" value={password} onChange={handlePasswordChange} />
+
+          <h3>Image:</h3>
+          <input type="text" value={image} onChange={handleSetImage} />
+
+          <h3>Role:</h3>
+          <select className="dropdown1"
+              value={role}
+              onChange={handleOptionChange}
+              >
+            <option value="-">Select Option</option>
+            <option value="admin">admin</option>
+            <option value="buyer">buyer</option>
+            <option value="rider">rider</option>
+            <option value="seller">seller</option>
+          </select>
+          
+        <button type="submit">Sign Up</button>
+        <a href='/'><Link to="/">Exists? <span><strong>Login</strong></span></Link></a>
+        <h3>{error}</h3>
+      </form>
      </div>
   );
 };
