@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 const ProductDetailsPage = ({  product }) => {
 
   const selector =useSelector((state)=>state.reducer)
-  const [role, setRole] = useState('default');
+  const [setRole] = useState('default');
   const flag=  localStorage.getItem('sellerPage',false)
 
   console.log(flag)
@@ -25,7 +25,7 @@ const ProductDetailsPage = ({  product }) => {
         console.error('Error parsing user data from localStorage:', error);
       }
     }
-  },[selector]);
+  }, [selector, setRole]);
 
   return (
       <div className="buyer-details cursor">
@@ -33,7 +33,7 @@ const ProductDetailsPage = ({  product }) => {
           <p><strong>Product: </strong>{product.name}</p>
           <p><strong>Price: </strong>{product.price}</p>
           <img className='img-size' src={product.image} alt="img"></img>
-      </Link>
+        </Link>
     </div>
   )
 }
