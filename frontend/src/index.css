@@ -451,6 +451,24 @@ header a {
   color: #4eff74;
 }
 
+.cursor {
+  cursor: pointer;
+}
+
+.white {
+  color: #ffffff;
+}
+
+.modal {
+  /* Other styles */
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+}
+
+.modal.show {
+  opacity: 1;
+}
+
 .home {
   display: grid;
   grid-template-columns: 3fr 1fr;

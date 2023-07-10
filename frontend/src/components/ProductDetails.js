@@ -4,6 +4,9 @@ import '../index.css'
 import { useSelector,useDispatch } from 'react-redux';
 import { incrementCount,addProductToCart} from '../actions/action';
 import { useState,useEffect } from 'react'
+import { Link } from 'react-router-dom';
+
+
 const ProductDetails = ({  product }) => {
 
      const selector =useSelector((state)=>state.reducer)
@@ -14,8 +17,6 @@ const ProductDetails = ({  product }) => {
      const [image,setImage]=useState('')
      const [SingleClick,setSingleClick]=useState(false)
      const flag=  localStorage.getItem('sellerPage',false)
-     
-
 
     const [productQuantity, setQuantity] = useState(1)
     const AddToCart = () => {
@@ -102,17 +103,11 @@ const EditTheProduct = async (e) => {
   }
 };
    return (
-        <div className="buyer-details">
+        <div className="buyer-details cursor">
+          <Link to="/product-details">
             <p><strong>Product: </strong>{product.name}</p>
             <p><strong>Price: </strong>{product.price}</p>
-            {/* <p><strong>seller: </strong>{product.seller.name}</p> */}
             <img className='img-size' src={product.image} alt="img"></img>
-        {/* <label className="label1">Change Status</label>
-        <select className="dropdown1" onChange={handleOptionChange}>
-            <option value="">Select Option</option>
-            <option value="accepted">accepted</option>
-            <option value="rejected">rejected</option>
-        </select> */}
         {role==='buyer' &&
                <label>quantity</label>
         }
@@ -176,7 +171,8 @@ const EditTheProduct = async (e) => {
         </form>
        
        }
-        </div>
+       </Link>
+      </div>
     )
 }
 

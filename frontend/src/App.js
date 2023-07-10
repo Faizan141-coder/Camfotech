@@ -11,6 +11,7 @@ import MyOrders from './pages/myOrders';
 import MyDelivery from './pages/MyDelivery';
 import CartPage from './pages/CartPage';
 import Checkout from './pages/Checkout';
+import ProductDetailsManage from './pages/ProductDetailsManage';
 
 function App() {
   return (
@@ -30,6 +31,8 @@ function App() {
               <Route path="/MyDelivery" element={<MyDelivery />} />
               <Route path="/CartPage" element={<CartPage />} />
               <Route path="/Checkout" element={<Checkout />} />
+              <Route path="/product-details" element={<ProductDetailsManage />} />              
+              {/* <Route path="/" element={<ProductDetailsPage />} /> */}
             </Routes>
           </div>
       </Router>
